@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/data-warehouse.iml" filepath="$PROJECT_DIR$/data-warehouse.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sparksql/sparksql.iml" filepath="$PROJECT_DIR$/sparksql/sparksql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hive on spark/hive on spark.iml" filepath="$PROJECT_DIR$/hive on spark/hive on spark.iml" />
     </modules>
   </component>
 </project>

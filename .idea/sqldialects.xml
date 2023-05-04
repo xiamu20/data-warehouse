@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/sparksql/ods/ods_order(policy)_detail_inc.hql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/sparksql/ods/ods_order(policy)_info_inc.hql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/sparksql/ods/ods_sku(product)_info_full.hql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/sparksql/ods/ods_user_info_inc.hql" dialect="Redshift" />
-    <file url="file://$PROJECT_DIR$/sparksql/test.hql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/hive on spark/ods/ods_order(policy)_detail_inc.hql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/hive on spark/ods/ods_order(policy)_info_inc.hql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/hive on spark/ods/ods_sku(product)_info_full.hql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/hive on spark/ods/ods_user_info_inc.hql" dialect="Redshift" />
+    <file url="file://$PROJECT_DIR$/hive on spark/test.hql" dialect="TSQL" />
   </component>
 </project>
