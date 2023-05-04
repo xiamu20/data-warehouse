@@ -22,13 +22,17 @@ load_data(){
 }
 
 case $1 in
-    "ods_sku_info_full")
-        load_data "ods_sku_info_full"
+
+    "ods_order_info_inc")
+        load_data "ods_order_info_inc"
     ;;
     "ods_user_info_inc")
         load_data "ods_user_info_inc"
     ;;
+        "ods_order_detail_inc")
+        load_data "ods_order_detail_inc"
+    ;;
     "all")
-        load_data "ods_sku_info_full" "ods_user_info_inc"
+        load_data "ods_order_info_inc" "ods_user_info_inc" "ods_order_detail_inc"
     ;;
 esac

@@ -10,6 +10,9 @@ else
 fi
 
 dim_user_zip="
+
+
+
 insert overwrite table ${APP}.dim_user_zip partition (dt='9999-12-31')
 select
     data.id,

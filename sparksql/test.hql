@@ -1,0 +1,1 @@
+select * from gmall.ods_user_info_inc limit 2;
