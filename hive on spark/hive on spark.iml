@@ -10,6 +10,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ods" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/dim" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/dwd" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dws(dwm)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ads" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/../sparksql/target" />
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />

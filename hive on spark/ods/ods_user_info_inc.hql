@@ -21,5 +21,7 @@ CREATE EXTERNAL TABLE ods_user_info_inc
   `old`  MAP<STRING,STRING> COMMENT '旧值'
 ) COMMENT '用户表'
 PARTITIONED BY (`dt` STRING)
-ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.JsonSerDe'
-LOCATION '/warehouse/gmall/ods/ods_user_info_inc/';
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+STORED AS ORC
+LOCATION '/warehouse/gmall/dwd/dwd_trade_order_detail_inc/'
+  TBLPROPERTIES ('orc.compress' = 'snappy');

@@ -58,37 +58,6 @@ left join
     and type = 'insert'
 ) oi
 on od.order_id = oi.id
-left join
-(
-    select
-        data.order_detail_id,
-        data.activity_id,
-        data.activity_rule_id
-    from ${APP}.ods_order_detail_activity_inc
-    where dt = '$do_date'
-    and type = 'insert'
-) act
-on od.id = act.order_detail_id
-left join
-(
-    select
-        data.order_detail_id,
-        data.coupon_id
-    from ${APP}.ods_order_detail_coupon_inc
-    where dt = '$do_date'
-    and type = 'insert'
-) cou
-on od.id = cou.order_detail_id
-left join
-(
-    select
-        dic_code,
-        dic_name
-    from ${APP}.ods_base_dic_full
-    where dt='$do_date'
-    and parent_code='24'
-)dic
-on od.source_type=dic.dic_code;
 "
 
 case $1 in
