@@ -1,4 +1,5 @@
-#order_info
+
+##order_info
 create table test.order_info
 (uid int,oid int,dt int);
 insert into test.order_info
@@ -11,12 +12,14 @@ values
 (2,3,20220104);
 
 ##取用户最新的oid
-set @partition_filed:=0;
+#变量赋值初始化
+
+set @partition_field:=0;
 set @row_num:=0;
 
 select
-@row_num:=if(@partition_filed=t.uid,@row_num+1,1) as row_num,
-@partition_filed:=t.uid as uid,
+@row_num:=if(@partition_field=t.uid,@row_num+1,1) as row_num,
+@partition_field:=t.uid as uid,
 t.oid,
 t.dt
 from
@@ -29,6 +32,8 @@ from
 test.order_info
 order by uid,dt desc
 )t;
+
+
 result:
 +---------+------+------+----------+
 | row_num | uid  | oid  | dt       |
