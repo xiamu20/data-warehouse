@@ -1,4 +1,5 @@
 #order_info
+drop table  test.order_info;
 create table test.order_info
 (uid int,oid int,dt int);
 insert into test.order_info
