@@ -1,5 +1,5 @@
 
-##order_info
+## order_info
 create table test.order_info
 (uid int,oid int,dt int);
 insert into test.order_info
@@ -11,8 +11,8 @@ values
 (2,2,20220103),
 (2,3,20220104);
 
-##取用户最新的oid
-#变量赋值初始化
+## 取用户最新的oid
+# 变量赋值初始化
 
 set @partition_field:=0;
 set @row_num:=0;
